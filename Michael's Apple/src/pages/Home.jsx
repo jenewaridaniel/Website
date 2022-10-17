@@ -5,6 +5,7 @@ import MotionDiv from "../components/utils/MotionDiv";
 import PhoneDisplay from "../components/home/PhoneDIsplay";
 import Macs from "../components/home/Macs";
 import Grid from "../components/home/Grid";
+import PageFooter from "../components/home/PageFooter";
 
 const Home = () => {
   const phones = [
@@ -26,9 +27,9 @@ const Home = () => {
       {phones.map((phone) => (
         <PhoneDisplay phone={phone} key={phone.phoneName} />
       ))}
-
       <Macs />
       <Grid />
+      <PageFooter />
     </MotionDiv>
   );
 };

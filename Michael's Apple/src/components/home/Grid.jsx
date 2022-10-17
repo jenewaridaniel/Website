@@ -18,14 +18,14 @@ const Grid = () => {
       src: "ipads.png",
     },
     {
-      title: 'iPad Mini',
+      title: "iPad Mini",
       header: "Mega power. Mini sized",
       m2: false,
       dark: false,
       src: "ipad.png",
     },
     {
-      title: 'iPhone SE',
+      title: "iPhone SE",
       header: "Love the power. Love the price",
       m2: false,
       dark: false,
@@ -33,10 +33,10 @@ const Grid = () => {
     },
   ];
   return (
-    <div className="p-4 pt-24 bg-zinc-100 grid gap-4 grid-cols-2">
+    <div className="p-4 pt-24 bg-zinc-50 grid gap-4 grid-cols-2">
       {products.map((product) => (
         <div
-          className={`flex flex-col h-[90vh] p-20 justify-center gap-4  ${
+          className={`flex flex-col h-[90vh] p-20 justify-center gap-4 cursor-pointer ${
             product.dark ? "bg-black text-zinc-200 " : "text-black"
           }`}
         >
@@ -52,7 +52,7 @@ const Grid = () => {
                 />
               )}
             </h2>
-            <h3 className="text-xl text-blue-400">
+            <h3 className="text-xl text-blue-400 hover:underline">
               Learn more
               <ChevronRightIcon className="h-6 w-6 inline"></ChevronRightIcon>
             </h3>
